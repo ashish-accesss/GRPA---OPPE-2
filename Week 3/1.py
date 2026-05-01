@@ -24,7 +24,7 @@ elif task == "total_price":
             break
         quantity, price = line.split() # split uses space by default
         quantity, price = int(quantity), int(price) # convert to ints
-        total_price = total_price + quantity*price # accumulate the total price
+        total_price += quantity*price # accumulate the total price
     print(total_price)
 elif task == "only_ed_or_ing":
     word = input()
